@@ -4,6 +4,32 @@ A dark-themed SSH/SFTP file manager built with Python and Tkinter. Connects to a
 
 ---
 
+## Download
+
+### 🪟 Windows — standalone executable
+
+No Python required. Download and run directly:
+
+**[⬇ Download Twenty_Tools.exe](https://github.com/Gvte-Kali/Twenty_Tool/raw/refs/heads/main/Twenty_Tools.exe)**
+
+---
+
+### 🐧 Linux — one-liner
+
+Requires Python 3.10+ and `pip install paramiko`.
+
+```bash
+pip install paramiko && wget https://raw.githubusercontent.com/Gvte-Kali/Twenty_Tool/refs/heads/main/Twenty_Tools.py -O Twenty_Tools.py && python3 Twenty_Tools.py
+```
+
+Or if you prefer `curl`:
+
+```bash
+pip install paramiko && curl -L https://raw.githubusercontent.com/Gvte-Kali/Twenty_Tool/refs/heads/main/Twenty_Tools.py -o Twenty_Tools.py && python3 Twenty_Tools.py
+```
+
+---
+
 ## Features
 
 ### Connection
@@ -73,7 +99,7 @@ pip install paramiko
 ## Run
 
 ```bash
-python scp_tool.py
+python3 Twenty_Tools.py
 ```
 
 ---
@@ -86,7 +112,7 @@ Install PyInstaller:
 pip install pyinstaller
 ```
 
-Place `scp_tool.py`, `twenty_tools.ico`, and `Twenty_Tools.spec` in the same folder, then run:
+Place `Twenty_Tools.py`, `twenty_tools.ico`, and `Twenty_Tools.spec` in the same folder, then run:
 
 ```bash
 python -m PyInstaller Twenty_Tools.spec
@@ -100,7 +126,7 @@ The executable will appear in `dist/Twenty_Tools.exe`. It is fully standalone �
 
 ```
 Twenty_Tools/
-├── scp_tool.py          # Main application
+├── Twenty_Tools.py      # Main application
 ├── twenty_tools.ico     # App icon
 ├── Twenty_Tools.spec    # PyInstaller spec file
 ├── requirements.txt     # Python dependencies
